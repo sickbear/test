@@ -1,0 +1,37 @@
+@fz_h1: 34px;
+@fz_title: 30px;
+@fz_subtitle: 26px;
+@fz_text: 22px;
+
+
+h1, h2, h3, .title, .subtitle {
+    font-weight: bold;
+    line-height: 0.9em;
+}
+h1 {
+    font-size: @fz_h1;
+    margin: 30px 0;
+}
+h2, .title {
+    font-size: @fz_title;
+    margin: 20px 0;
+}
+h3, .subtitle {
+    font-size: @fz_subtitle;
+    margin: 10px 0;
+}
+p, li {
+    line-height: 1.2em;
+    margin: 10px 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    grid-gap: 1%;
+    font-family: sans-serif;
+}
+
